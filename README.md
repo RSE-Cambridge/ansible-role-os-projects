@@ -46,6 +46,11 @@ Each item should be a dict containing the following items:
   - `domain_roles`: Optional list of roles to assign to the user in the user
     domain.
   - `openrc_file`: Path to an environment file to create.
+- `groups`: Optional list of groups to register. Each group should be a dict
+  containing the following items:
+  - `name`: The name of the gr.
+  - `description`: User name/description (optional)
+  - `roles`: Optional list of roles to assign to the group in the project.
 - `keypairs`: Optional list of SSH key pairs to register with Nova. Each key
   pair should be a dict containing the following items:
   - `name`: The name of the keypair.

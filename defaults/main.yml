@@ -32,6 +32,13 @@ os_projects_domains: []
 #   - 'domain_roles': Optional list of roles to assign to the user in the user
 #     domain.
 #   - 'openrc_file': Optional path to an environment file to create.
+# - 'groups': Optional list of groups to register. Each groups should be a dict
+#   containing the following items:
+#   - 'name': The name of the user.
+#   - 'description': The user's password.
+#   - 'roles': Optional list of roles to assign to the group in the project.
+#   - 'domain_roles': Optional list of roles to assign to the group in the user
+#     domain.
 # - 'keypairs': Optional list of SSH key pairs to register with Nova. Each key
 #   pair should be a dict containing the following items:
 #   - 'name': The name of the keypair.
